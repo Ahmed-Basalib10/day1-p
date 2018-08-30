@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main ()
+{
+ int number;
+ printf("\n enter the number:");
+ scanf("%d",&number);
+ printf("\n the number is: %d",number);
+    return 0;
+}
+
