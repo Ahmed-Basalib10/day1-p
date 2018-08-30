@@ -1,0 +1,28 @@
+Answer 1
+#include<stdio.h>
+int main()
+{
+printf("\n hello world");
+
+return 0;
+
+}
+
+
+
+
+
+
+
+Answer 2
+#include<stdio.h>
+int main()
+{
+ char n[20];
+printf("\n Enter your name:\n");
+scanf("%s",n);
+
+printf("%s",n);
+    return 0;
+
+}
