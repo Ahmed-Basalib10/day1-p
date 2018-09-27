@@ -1,0 +1,210 @@
+1.
+#include<stdio.h>
+struct sum
+{
+   int a[100];
+   int b;
+   int add;
+};
+
+
+struct sum input()
+{
+   struct sum i;
+   printf("How manyn elements you want to add?\n");
+   scanf("%d",&i.b);
+   printf("Enter elements:\n");
+   for(int k=0;k<i.b;k++)
+   {
+       scanf("%d",&i.a[k]);
+   }
+   return i;
+}
+
+struct sum compute()
+{
+   struct sum i;
+   i.add = 0;
+   for(int k = 0; k<i.b;k++)
+   {
+       i.add = i.add + i.a[k];
+   }
+   return i;
+}
+
+struct sum output()
+{
+   struct sum i;
+   printf("Sum of given numbers is %d\n",i.add);
+}
+
+int main()
+{
+   struct sum i;
+   input();
+   compute();
+   output();
+   return 0;
+}
+
+
+2.
+struct sum
+{
+   int a[100];
+   int b;
+};
+
+
+struct sum input()
+{
+   struct sum i;
+   printf("How manyn elements you want to add?\n");
+   scanf("%d",&i.b);
+   printf("Enter elements:\n");
+   for(int k=0;k<i.b;k++)
+   {
+       scanf("%d",&i.a[k]);
+   }
+   return i;
+}
+
+
+
+
+3.
+
+struct sum
+{
+   int a[100];
+   int b;
+};
+
+struct sum compute()
+{
+   struct sum i;
+   i.add = 0;
+   for(int k = 0; k<i.b;k++)
+   {
+       i.add = i.add + i.a[k];
+   }
+   return i;
+}
+
+
+
+
+
+4.
+
+#include<stdio.h>
+#include<math.h>
+
+struct sum
+{
+   float a[100];
+   int b;
+   float tmp;
+   float add;
+};
+
+
+struct sum input()
+{
+   struct sum i;
+   printf("How many elements you want to add?\n");
+   scanf("%d",&i.b);
+   printf("Enter elements:\n");
+   for(int k=0;k<i.b;k++)
+   {
+       scanf("%f",&i.a[k]);
+   }
+   return i;
+}
+
+struct sum compute()
+{
+   struct sum i;
+   i.add = 0;
+   for(int k = 0; k<i.b;k++)
+   {
+       i.tmp = sqrt(i.a[k]);
+       i.add = i.add + i.tmp;
+   }
+   return i;
+}
+
+struct sum output()
+{
+   struct sum i;
+   printf("Sum of given numbers is %f\n",i.add);
+}
+
+int main()
+{
+   struct sum i;
+   input();
+   compute();
+   output();
+   return 0;
+}
+
+
+
+5.
+
+
+#include<stdio.h>
+#include<math.h>
+
+struct sum
+{
+   int a[100];
+   int b;
+   int tmp;
+   int add;
+};
+
+
+struct sum input()
+{
+   struct sum i;
+   printf("How many elements you want to give?\n");
+   scanf("%d",&i.b);
+   printf("Enter elements:\n");
+   for(int k=0;k<i.b;k++)
+   {
+       scanf("%d",&i.a[k]);
+   }
+   return i;
+}
+
+struct sum compute()
+{
+   struct sum i;
+   int k = 0;
+   i.tmp = i.a[k];
+   for(k=0;k<i.b;k++)
+   {
+       if(i.tmp>i.a[k])
+   {
+       i.tmp = i.a[k];
+   }
+   }
+   return i;
+}
+
+struct sum output()
+{
+   struct sum i;
+   printf("Smallest of all the numbers is %d\n",i.tmp);
+}
+
+int main()
+{
+   struct sum i;
+   input();
+   compute();
+   output();
+   return 0;
+}
